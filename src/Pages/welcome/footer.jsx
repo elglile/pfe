@@ -1,0 +1,69 @@
+import React from 'react';
+import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+
+/* rechercher dans fill mbr-additional.css pou le css :    v    <!-- ***** Footer Start ***** -->*/
+function Footer(props) {
+    return (
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="/images/min-logo-81x69.png"style={{width:"30%" , padding:"10px"}} alt="hexashop ecommerce templatemo"/>
+                        <a className=" text-white   text-decoration-none" >EasyStady</a>
+                        </div>
+                        <ul>
+                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
+                            <li><a href="#">hexashop@company.com</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    <ul>
+                        <li><a href="#">Men’s Shopping</a></li>
+                        <li><a href="#">Women’s Shopping</a></li>
+                        <li><a href="#">Kid's Shopping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Tracking ID</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        
+                        <br/>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+                        <ul>
+                                <li><a href="#"><FaFacebookF size={24} /></a></li>
+                                <li><a href="#"><FaTwitter size={24} /></a></li>
+                                <li><a href="#"><FaLinkedinIn size={24} /></a></li>
+                                {/* <li><a href="#"><i class="fa fa-behance"></i></a></li> */}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    );
+}
+
+export default Footer;
