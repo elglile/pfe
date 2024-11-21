@@ -1,44 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from 'react-bootstrap/Button';
-import { CgAdd } from 'react-icons/cg';
-import { CiCircleCheck } from 'react-icons/ci';
-import { IoCallSharp } from 'react-icons/io5';
-import { MdOutlineStarHalf } from 'react-icons/md';
-
-import ReactDOM from 'react-dom';
 
 import { Carousel } from './components/Carousel'
 import { slides } from "./data/carouselData";
-
-
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx';
-
-
-// export default function PostPublication() {
-//     return (<>
-//         <Navbar/>
-//         <section class="section" id="product" style={{paddingBottom: '180px'}}>
-//             <div class="container">
-//                 <div class="row" style={{ justifyContent: 'space-between', paddingTop:"150px"}}>
-//                     <div class="col-lg-8">
-
-//                     </div>
-//                     <div class="col-lg-4">
-//                         <Cardd />
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//         <Footer/>
-
-//     </>
-//     );
-// }
-
-
 
 function ServiceDetails(props) {
     const [isCircleCheck, setIsCircleCheck] = useState(true);
@@ -50,9 +15,8 @@ function ServiceDetails(props) {
     const dispatch = useDispatch()
     return (
         <>
-            {/* <Navbar /> */}
             <div className="container  mt-5">
-                <div /*className="container py-5"*/>
+                <div >
                     <div className="row g-4 mb-5">
                         <div className="col-lg-8 col-xl-11">
                             <div className="row g-4">
@@ -77,7 +41,7 @@ function ServiceDetails(props) {
                                     <p className="mb-4">Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p>
                                     <div className='Reactionuser' style={{}}>
                                         {/* <!-- j'aime --> */}
-                                        <label className="ui-bookmarkPP" style={{ margin:' 16px 0px' }}>
+                                        <label className="ui-bookmarkPP" style={{ margin: ' 16px 0px' }}>
                                             <input type="checkbox" />
                                             <div className="bookmarkP">
                                                 <svg viewBox="0 0 16 16" style={{}} className="bi bi-heart-fill" xmlns="http://www.w3.org/2000/svg">

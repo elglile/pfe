@@ -107,15 +107,15 @@ function CreatePost(params) {
                                                 Description
                                             </label>
                                             <textarea className="form-control" id="inputFirstName form-controlP" type=""
-                                                placeholder="Description de Service" value="" 
-                                                style={{height:'150px' , resize:'none'}}
-                                                />
+                                                placeholder="Description de Service" value=""
+                                                style={{ height: '150px', resize: 'none' }}
+                                            />
                                         </div>
 
                                         {/* image */}
                                         <div className='col-md-6'>
                                             <div className="d-flex cursor-pointer rounded "
-                                                style={{ border: "2px dashed #d5d5fd", justifyContent: 'center', alignItems: 'center', marginTop: '28px', padding: '6px', height: '100px'}}
+                                                style={{ border: "2px dashed #d5d5fd", justifyContent: 'center', alignItems: 'center', marginTop: '28px', padding: '6px', height: '100px' }}
                                                 onClick={() => document.querySelector('.inputClick').click()}
                                             >
                                                 <input type="file" accept='image/*' className='inputClick' name="" id="" multiple hidden onChange={handleFileChange} />
@@ -125,35 +125,23 @@ function CreatePost(params) {
                                                     <MdCloudUpload color='#d5d5fd' size={65} />
                                                 }
                                             </div>
-                                            <div className='d-flex justify-content-between align-items-center ' style={{backgroundColor:' #e9f0ff' , borderRadius: '5px', marginTop:'5px', padding:'10px 20px'}}>
-                                                <AiFillFileImage color='#1474cFf'/>
+                                            <div className='d-flex justify-content-between align-items-center ' style={{ backgroundColor: ' #e9f0ff', borderRadius: '5px', marginTop: '5px', padding: '10px 20px' }}>
+                                                <AiFillFileImage color='#1474cFf' />
                                                 <span>{filName}</span>
-                                                <MdDelete onClick={()=>{
+                                                <MdDelete onClick={() => {
                                                     setFilName("No select File")
                                                     setImg([])
                                                     setSelectedFiles([])
                                                     setFilName([])
                                                     console.log(...selectedFiles)
-                                                    
-                                                }}/>
+
+                                                }} />
                                             </div>
                                         </div>
-                                        </div>
+                                    </div>
 
 
-                                    {/* image */}
-                                    {/* <div className="col-md-3 d-flex cursor-pointer rounded "
-                                        style={{ border: "2px dashed #d5d5fd", justifyContent: 'center', alignItems: 'center', marginTop: '28px', padding: '6px', width: ' 49.5%' }}
-                                        onClick={() => document.querySelector('.inputClick').click()}
-                                    >
-                                        <input type="file" accept='image/*' className='inputClick' name="" id="" multiple hidden onChange={handleFileChange} />
-                                        {img.length ? img.slice(0, 3).map(el => (
-                                            <img src={el} height={25} style={{ width: 'auto' }} alt={filName} />))
-                                            :
-                                            <MdCloudUpload color='#d5d5fd' size={28} />
-                                        }
 
-                                    </div> */}
                                     <button className="btn btn-primary" type="button">Create</button>
                                 </form>
                             </div>
@@ -269,14 +257,14 @@ function UpdatePost(params) {
                                                 Description
                                             </label>
                                             <textarea className="form-control" id="inputFirstName form-controlP" type=""
-                                                placeholder="Description de Service" value="" 
-                                                style={{height:'150px' , resize:'none'}}
-                                                />
+                                                placeholder="Description de Service" value=""
+                                                style={{ height: '150px', resize: 'none' }}
+                                            />
                                         </div>
 
                                         {/* image */}
                                         <div className="col-md-3 d-flex cursor-pointer rounded "
-                                            style={{ border: "2px dashed #d5d5fd", justifyContent: 'center', alignItems: 'center', marginTop: '28px', padding: '6px', width: ' 49.5%', height: '150px'}}
+                                            style={{ border: "2px dashed #d5d5fd", justifyContent: 'center', alignItems: 'center', marginTop: '28px', padding: '6px', width: ' 49.5%', height: '150px' }}
                                             onClick={() => document.querySelector('.inputClick').click()}
                                         >
                                             <input type="file" accept='image/*' className='inputClick' name="" id="" multiple hidden onChange={handleFileChange} />
@@ -289,19 +277,7 @@ function UpdatePost(params) {
                                         </div>
                                     </div>
 
-                                    {/* image */}
-                                    {/* <div className="col-md-3 d-flex cursor-pointer rounded "
-                                        style={{ border: "2px dashed #d5d5fd", justifyContent: 'center', alignItems: 'center', marginTop: '28px', padding: '6px', width: ' 49.5%' }}
-                                        onClick={() => document.querySelector('.inputClick').click()}
-                                    >
-                                        <input type="file" accept='image/*' className='inputClick' name="" id="" multiple hidden onChange={handleFileChange} />
-                                        {img.length ? img.slice(0, 3).map(el => (
-                                            <img src={el} height={25} style={{ width: 'auto' }} alt={filName} />))
-                                            :
-                                            <MdCloudUpload color='#d5d5fd' size={28} />
-                                        }
 
-                                    </div> */}
                                     <button className="btn btn-primary" type="button">Save Update</button>
                                 </form>
                             </div>
@@ -312,4 +288,4 @@ function UpdatePost(params) {
         </>
     );
 }
-export  {CreatePost , UpdatePost};
+export { CreatePost, UpdatePost };

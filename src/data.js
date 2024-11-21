@@ -19,11 +19,7 @@ const studentProfil = [
         contact: {
             email: "ChafikAy@gmail.com",
             phone: "+212687656534",
-            // socialMedia: {
-            //   facebook: "https://www.facebook.com/Ayoubchf",
-            //   twitter: "https://twitter.com/Ayoubchf",
-            //   instagram: "https://www.instagram.com/Ayoubchf/"
-            // }
+
         },
         bio: "I'm a college student who loves trying out different foods from around the world!",
     },
@@ -45,15 +41,10 @@ const studentProfil = [
         contact: {
             email: "abdobanAli@gmail.com",
             phone: "+212687342134",
-            // socialMedia: {
-            //   facebook: "https://www.facebook.com/johndoe",
-            //   twitter: "https://twitter.com/johndoe",
-            //   instagram: "https://www.instagram.com/johndoe/"
-            // }
+
         },
         bio: "I'm a college student who loves trying out different foods from around the world!",
     },
-    // Ajoutez d'autres profils au besoin
 ];
 
 
@@ -106,7 +97,6 @@ export const StudentServices = [
             img:'./images/McDonald.jpeg',
             id: 1,
             name: "McDonald's",
-            // serviceType: "Food",
             description: "Chaîne de restauration rapide internationale.",
             contact: {
                 email: "contact@mcdonalds.ma",
@@ -126,7 +116,6 @@ export const StudentServices = [
 
             id: 2,
             name: "KFC",
-            // serviceType: "Food",
             description: "Chaîne de restauration rapide spécialisée dans le poulet frit.",
             contact: {
                 email: "contact@kfc.ma",
@@ -166,7 +155,6 @@ export const StudentServices = [
 
             id: 1,
             name: "transportSuper",
-            // serviceType: "transportationServices",
             description: "service de transport",
             contact: {
                 email: "contact@transpostS.ma",

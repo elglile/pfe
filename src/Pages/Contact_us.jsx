@@ -18,7 +18,6 @@ function Contact_us(props) {
                             <div className="col-12">
                                 <div className="text-center mx-auto" style={{ maxWidth: 700 }}>
                                     <h1 className="text-primary">Get in touch</h1>
-                                    {/* <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax &amp; PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> */}
                                 </div>
                             </div>
                             <div className="col-lg-12">
@@ -38,16 +37,8 @@ function Contact_us(props) {
                                 </form>
                             </div>
                             <div className="col-lg-5 h-500">  
-                                {/* <div className="d-flex p-4 rounded mb-4 bg-white">
-                                    <i className="fas fa-map-marker-alt fa-2x text-primary me-4" />
-                                    <div>
-                                        <h4>Address</h4>
-                                        <p className="mb-2">123 Street New York.USA</p>
-                                    </div>
-                                </div> */}
                                 <div className="d-flex p-4 rounded mb-4 bg-white">
                                 <SiGmail size={38} color='blue' className='me-4 ' />
-                                    {/* <i className="fas fa-envelope fa-2x text-primary me-4" /> */}
                                     <div>
                                         <h4>Mail Us</h4>
                                         <p className="mb-2">info@example.com</p>
@@ -55,7 +46,6 @@ function Contact_us(props) {
                                 </div>
                                 <div className="d-flex p-4 rounded bg-white">
                                 <IoCall  size={38} color='blue' className='me-4 ' />
-                                    {/* <i className="fa fa-phone-alt fa-2x text-primary me-4" /> */}
                                     <div>
                                         <h4>Telephone</h4>
                                         <p className="mb-2">(+012) 3456 7890</p>

@@ -69,7 +69,6 @@ export default function App() {
         <>
                     <Navbar />
                     <UpdatePost />
-                    {/* <Footer /> */}
                   </>
                 } />
         <Route path="/PostPub" element={
@@ -82,7 +81,6 @@ export default function App() {
         <Route path="/Notify" element={<Alerts />} />
         
         <Route path="/es-admin/Dashbord" element={<PageAdmin />} />
-        {/* <Route path="/es-admin" element={<SignIn/>} /> */}
         <Route path="/es-admin" element={<>
         <SignIn/>
         </>} />
@@ -91,9 +89,6 @@ export default function App() {
         <ProfileCard/>
         </>} />
 
-
-
-        {/* <Route path="/Notification" element={<Notification />} /> */}
       </Routes>
     </div>
   );

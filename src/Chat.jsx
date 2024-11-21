@@ -33,7 +33,6 @@ function Chatboot() {
     },
     {
       id: '4',
-      // message: ' ' +'',  options:[{ value: 1, label: 'back', trigger: '1'}],
       component: (
         <div> Sure! Contact the support on this <br />
               Email: Exemple@gmail.com

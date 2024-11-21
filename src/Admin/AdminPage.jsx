@@ -27,12 +27,8 @@ import { Container, Form, FormControl, Nav, NavDropdown, Navbar, Row, Col, Dropd
 export function PageAdmin() {
   return (
     <><NavAdmin />
-      {/* <Navv/> */}
-      {/* <NotificationDropdown /> */}
       <Dashboard />
       <Tablau />
-      {/* <ModifyAlert /> */}
-      {/* <ProfileCard /> */}
       <TablePost />
       <TableSingial />
       <TablauAdmin />
@@ -44,7 +40,7 @@ export function PageAdmin() {
 
 export function NavAdmin() {
   return (
-    <Navbar bg="dark" variant="dark" expand="xl" style={{marginBottom:"50px"}}>
+    <Navbar bg="dark" variant="dark" expand="xl" style={{ marginBottom: "50px" }}>
       <Container>
         <img src="/images/min-logo-81x69.png" />
         <Navbar.Toggle aria-controls="navbarCollapse" />
@@ -299,35 +295,35 @@ const Navv = () => {
 
 function Dashboard() {
   return (
-    <>      
-          <div className="">
-            <div className="row justify-content-center">
-              <div className="col-lg-8 d-flex m-5 p-5" >
-                <div className="">
-                  <div className="">
-                    <BarChart
-                      series={[{ data: [35, 44, 24, 34, 35, 44, 60] }]}
-                      height={290}
-                      width={600}
-                      xAxis={[{ data: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], scaleType: 'band' }]}
-                      margin={{ top: 10, bottom: 30, left: 40, right: 0 }}
-                    />
-                  </div>
-                </div>
-
-
-                <div>
-                <Example/>
-                </div>
-
-
+    <>
+      <div className="">
+        <div className="row justify-content-center">
+          <div className="col-lg-8 d-flex m-5 p-5" >
+            <div className="">
+              <div className="">
+                <BarChart
+                  series={[{ data: [35, 44, 24, 34, 35, 44, 60] }]}
+                  height={290}
+                  width={600}
+                  xAxis={[{ data: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], scaleType: 'band' }]}
+                  margin={{ top: 10, bottom: 30, left: 40, right: 0 }}
+                />
               </div>
-
             </div>
+
+
+            <div>
+              <Example />
+            </div>
+
 
           </div>
 
-          
+        </div>
+
+      </div>
+
+
     </>
   );
 }
@@ -1132,15 +1128,9 @@ function TablauAdmin() {
                                     1
                                   </div>
                                 </td>
-                                {/* <td className="align-middle text-center">
-                                  <div className="bg-light d-inline-flex justify-content-center align-items-center align-top" style={{ width: 35, height: 35, borderRadius: 3 }}>
-                                    <i className="fa fa-fw fa-photo" style={{ opacity: '0.8' }} />
-                                  </div>
-                                </td> */}
                                 <td className="text-nowrap align-middle">Adam Cotter</td>
                                 <td className="text-nowrap align-middle"><span>male</span></td>
                                 <td className="text-nowrap align-middle"><span>AyoubEL@gmail.com</span></td>
-                                {/* <td className="text-center align-middle"><i className="fa fa-fw text-secondary cursor-pointer fa-toggle-on" /></td> */}
                                 <td className="text-center align-middle">
                                   <div className="">
                                     <button className="btn btn-sm btn-outline-secondary badge" type="button" onClick={handleOpenEditModal}>Edit</button>

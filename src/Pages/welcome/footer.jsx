@@ -54,9 +54,7 @@ function Footer(props) {
                         <ul>
                                 <li><a href="#"><FaFacebookF size={24} /></a></li>
                                 <li><a href="#"><FaTwitter size={24} /></a></li>
-                                <li><a href="#"><FaLinkedinIn size={24} /></a></li>
-                                {/* <li><a href="#"><i class="fa fa-behance"></i></a></li> */}
-                        </ul>
+                                <li><a href="#"><FaLinkedinIn size={24} /></a></li>                        </ul>
                     </div>
                 </div>
             </div>

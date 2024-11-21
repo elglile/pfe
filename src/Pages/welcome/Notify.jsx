@@ -288,67 +288,6 @@ function AlertSystem() {
     </div>
   );
 }
-// function AlertManager() {
-//   const [manageralerts, setManagerAlerts] = useState([]);
-
-//   const showAlertManager = (type) => {
-//     const newAlertManager = {
-//       id: Date.now(),
-//       type: type,
-//       message: getMessageByType(type),
-//     };
-//     setManagerAlerts([...manageralerts, newAlertManager]);
-
-//     setTimeout(() => {
-//       removeAlert(newAlertManager.id);
-//     }, 2000);
-//   };
-
-//   const getMessageByType = (type) => {
-//     switch (type) {
-//       case 'info':
-//         return 'This is an info alert';
-//       case 'success':
-//         return 'This is a success alert';
-//       case 'danger':
-//         return 'This is a danger alert';
-//       case 'warning':
-//         return 'This is a warning alert';
-//       default:
-//         return '';
-//     }
-//   };
-
-//   const removeAlert = (id) => {
-//     setManagerAlerts(manageralerts.filter(alert => alert.id !== id));
-//   };
-
-//   return (
-//     <div className="position-fixed bottom-0 end-0 p-3" style={{ zIndex: 1050 }}>
-//       {manageralerts.map(alert => (
-//         <div key={alert.id} className={`alert alert-${alert.type} d-flex justify-content-between align-items-center mb-2`} role="alert">
-//           <div className="d-flex align-items-center">
-//             {alert.type === 'info' && <FaCircleInfo size={16} />}
-//             {alert.type === 'success' && <FaCircleInfo size={16} />}
-//             {alert.type === 'danger' && <FaRegCheckCircle size={16} />}
-//             {alert.type === 'warning' && <FaRegCheckCircle size={16} />}
-//             <p className="mb-0">
-//               {alert.message}
-//             </p>
-//           </div>
-//           <button type="button" className="close" onClick={() => removeAlert(alert.id)} aria-label="Close">×</button>
-//         </div>
-//       ))}
-//       <div className="d-flex">
-//         <button className="btn btn-info me-2" onClick={() => showAlertManager('info')}>Show Info</button>
-//         <button className="btn btn-success me-2" onClick={() => showAlertManager('success')}>Show Success</button>
-//         <button className="btn btn-danger me-2" onClick={() => showAlertManager('danger')}>Show Error</button>
-//         <button className="btn btn-warning me-2" onClick={() => showAlertManager('warning')}>Show Warning</button>
-//       </div>
-//     </div>
-//   );
-// }
-
 function AlertManager({ onShowAlert }) {
   const [managerAlerts, setManagerAlerts] = useState([]);
 
