@@ -56,13 +56,13 @@ function ServiceDetails(props) {
                     <div className="row g-4 mb-5">
                         <div className="col-lg-8 col-xl-11">
                             <div className="row g-4">
-                                <div className="col-lg-6">
+                                <div className="col-lg-7">
                                     <div className="border rounded">
                                         {/* <img src="./assets/images/glovo.png" className="img-fluid rounded" alt="Image" /> */}
                                         <Carousel data={slides} />
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-4">
                                     <h4 className="fw-bold mb-3">GLovo</h4>
                                     <p className="mb-3">Category: Food</p>
                                     <h5 className="fw-bold mb-3">3,35 Dh</h5>
